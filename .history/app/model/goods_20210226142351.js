@@ -10,19 +10,7 @@ module.exports=app=>{
     classify:{//分类
         type:String,
         required:true
-    },
-    metering:{//商品个数(库存)
-        type:Number
-    },
-    status:{//上架状态,true为"出售中",false为"已下架"
-        type:Boolean
-    },
-    price:{//价格
-        type:Number
-    },
-    postage:{//包邮
-        type:Boolean
-    },
+    }
   })
   return mongoose.model('Goods',GoodsSchema)
 }

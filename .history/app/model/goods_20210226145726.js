@@ -11,6 +11,15 @@ module.exports=app=>{
         type:String,
         required:true
     },
+    promotion:{//促销语
+        type:String
+    },
+    brand:{//品牌
+        type:String 
+    },
+    unit:{//计量单位
+        type:String
+    },
     metering:{//商品个数(库存)
         type:Number
     },

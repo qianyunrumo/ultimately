@@ -12,10 +12,4 @@ module.exports = app => {
   router.get('/menus',controller.menus.menus)
   //新增商品
   router.post('/add',controller.goods.add)
-  //商品列表
-  router.get('/goods',controller.goods.goods)
-  //删除商品
-  router.delete('/goods/delete',controller.goods.delete)
-  //商品分类
-  router.get('/goods/classify',controller.goods.classify)
 };

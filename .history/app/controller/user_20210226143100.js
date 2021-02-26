@@ -44,7 +44,9 @@ class UserController extends Controller {
         }
     }
     // async user() { //删除
-    //     let {id} = this.ctx.request.body
+    //     let {
+    //         id
+    //     } = this.ctx.request.body
     //     let res = await this.ctx.model.User.findByIdAndRemove({
     //         _id: id
     //     })

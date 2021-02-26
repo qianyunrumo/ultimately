@@ -23,6 +23,9 @@ module.exports=app=>{
     postage:{//包邮
         type:Boolean
     },
+    type:{//商品分类图标类型
+        type:String
+    },
   })
   return mongoose.model('Goods',GoodsSchema)
 }
