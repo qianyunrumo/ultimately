@@ -233,7 +233,7 @@ class MenuController extends Controller {
                 {
                   id: 214,
                   authName: "财务首页",
-                  path: '/financing/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -241,6 +241,12 @@ class MenuController extends Controller {
                   authName: "快捷向导",
                   path: null,
                   children: [
+                    {
+                      id: 317,
+                      authName: "交易结算",
+                      path: null,
+                      children: []
+                    },
                     {
                       id: 318,
                       authName: "支付日志",
@@ -256,7 +262,7 @@ class MenuController extends Controller {
                     {
                       id: 320,
                       authName: "退款日志",
-                      path: '/order/admin/refund',
+                      path: null,
                       children: []
                     }
                   ]
@@ -383,13 +389,13 @@ class MenuController extends Controller {
                     {
                       id: 331,
                       authName: "新增专题",
-                      path: '/system/topic/create',
+                      path: null,
                       children: []
                     },
                     {
                       id: 332,
                       authName: "专题管理",
-                      path: '/system/topic/admin',
+                      path: null,
                       children: []
                     }
                   ]

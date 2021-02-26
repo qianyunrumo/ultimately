@@ -389,7 +389,7 @@ class MenuController extends Controller {
                     {
                       id: 332,
                       authName: "专题管理",
-                      path: '/system/topic/admin',
+                      path: null,
                       children: []
                     }
                   ]
