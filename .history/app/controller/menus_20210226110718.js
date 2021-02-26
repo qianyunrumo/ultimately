@@ -465,7 +465,7 @@ class MenuController extends Controller {
                     {
                       id: 338,
                       authName: "商业授权",
-                      path: '/setting/bussinessauthorize',
+                      path: null,
                       children: []
                     }
                   ]

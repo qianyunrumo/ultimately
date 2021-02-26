@@ -306,7 +306,7 @@ class MenuController extends Controller {
                     {
                       id: 324,
                       authName: "会员统计",
-                      path: '/stats/data/client',
+                      path: null,
                       children: []
                     }
                   ]
@@ -321,7 +321,7 @@ class MenuController extends Controller {
                 {
                   id: 218,
                   authName: "系统首页",
-                  path: '/system/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -332,13 +332,13 @@ class MenuController extends Controller {
                     {
                       id: 325,
                       authName: "我的消息",
-                      path: '/system/message/user',
+                      path: null,
                       children: []
                     },
                     {
                       id: 326,
                       authName: "发布消息",
-                      path: '/system/message/send',
+                      path: null,
                       children: []
                     }
                   ]
@@ -351,13 +351,13 @@ class MenuController extends Controller {
                     {
                       id: 327,
                       authName: "广告位置",
-                      path: '/system/ads/position',
+                      path: null,
                       children: []
                     },
                     {
                       id: 328,
                       authName: "广告列表",
-                      path: '/system/ads/ads',
+                      path: null,
                       children: []
                     }
                   ]
@@ -370,13 +370,13 @@ class MenuController extends Controller {
                     {
                       id: 329,
                       authName: "新增文章",
-                      path: '/system/article/create',
+                      path: null,
                       children: []
                     },
                     {
                       id: 330,
                       authName: "文章管理",
-                      path: '/system/article/admin',
+                      path: null,
                       children: []
                     }
                   ]
@@ -410,7 +410,7 @@ class MenuController extends Controller {
                 {
                   id: 223,
                   authName: "设置首页",
-                  path: '/setting/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -421,13 +421,13 @@ class MenuController extends Controller {
                     {
                       id: 333,
                       authName: "用户组",
-                      path: '/setting/auth/group',
+                      path: null,
                       children: []
                     },
                     {
                       id: 334,
                       authName: "权限规则",
-                      path: '/setting/auth/rule',
+                      path: null,
                       children: []
                     }
                   ]
@@ -440,13 +440,13 @@ class MenuController extends Controller {
                     {
                       id: 335,
                       authName: "支付配置",
-                      path: '/setting/payallocation',
+                      path: null,
                       children: []
                     },
                     {
                       id: 336,
                       authName: "支付日志",
-                      path: '/setting/paylog',
+                      path: null,
                       children: []
                     }
                   ]
@@ -459,13 +459,13 @@ class MenuController extends Controller {
                     {
                       id: 337,
                       authName: "APP管理",
-                      path: '/setting/Appmanage',
+                      path: null,
                       children: []
                     },
                     {
                       id: 338,
                       authName: "商业授权",
-                      path: '/setting/bussinessauthorize',
+                      path: null,
                       children: []
                     }
                   ]

@@ -459,13 +459,13 @@ class MenuController extends Controller {
                     {
                       id: 337,
                       authName: "APP管理",
-                      path: '/setting/Appmanage',
+                      path: null,
                       children: []
                     },
                     {
                       id: 338,
                       authName: "商业授权",
-                      path: '/setting/bussinessauthorize',
+                      path: null,
                       children: []
                     }
                   ]

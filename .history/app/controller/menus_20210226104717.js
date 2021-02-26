@@ -370,13 +370,13 @@ class MenuController extends Controller {
                     {
                       id: 329,
                       authName: "新增文章",
-                      path: '/system/article/create',
+                      path: null,
                       children: []
                     },
                     {
                       id: 330,
                       authName: "文章管理",
-                      path: '/system/article/admin',
+                      path: null,
                       children: []
                     }
                   ]
@@ -410,7 +410,7 @@ class MenuController extends Controller {
                 {
                   id: 223,
                   authName: "设置首页",
-                  path: '/setting/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -421,13 +421,13 @@ class MenuController extends Controller {
                     {
                       id: 333,
                       authName: "用户组",
-                      path: '/setting/auth/group',
+                      path: null,
                       children: []
                     },
                     {
                       id: 334,
                       authName: "权限规则",
-                      path: '/setting/auth/rule',
+                      path: null,
                       children: []
                     }
                   ]
@@ -440,13 +440,13 @@ class MenuController extends Controller {
                     {
                       id: 335,
                       authName: "支付配置",
-                      path: '/setting/payallocation',
+                      path: null,
                       children: []
                     },
                     {
                       id: 336,
                       authName: "支付日志",
-                      path: '/setting/paylog',
+                      path: null,
                       children: []
                     }
                   ]
@@ -459,13 +459,13 @@ class MenuController extends Controller {
                     {
                       id: 337,
                       authName: "APP管理",
-                      path: '/setting/Appmanage',
+                      path: null,
                       children: []
                     },
                     {
                       id: 338,
                       authName: "商业授权",
-                      path: '/setting/bussinessauthorize',
+                      path: null,
                       children: []
                     }
                   ]

@@ -71,7 +71,7 @@ class MenuController extends Controller {
                     {
                       id: 305,
                       authName: "客服咨询",
-                      path: '/goods/opinion/consult',
+                      path: null,
                       children: []
                     }
                   ]
@@ -86,7 +86,7 @@ class MenuController extends Controller {
                 {
                   id: 205,
                   authName: "订单首页",
-                  path: '/order/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -97,13 +97,13 @@ class MenuController extends Controller {
                     {
                       id: 306,
                       authName: "订单列表",
-                      path: '/order/admin/list',
+                      path: null,
                       children: []
                     },
                     {
                       id: 307,
                       authName: "退款日志",
-                      path: '/order/admin/refund',
+                      path: null,
                       children: []
                     }
                   ]
@@ -118,7 +118,7 @@ class MenuController extends Controller {
                 {
                   id: 207,
                   authName: "营销首页",
-                  path: '/marketing/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -129,13 +129,13 @@ class MenuController extends Controller {
                     {
                       id: 308,
                       authName: "商品折扣",
-                      path: '/marketing/marketing/discount',
+                      path: null,
                       children: []
                     },
                     {
                       id: 309,
                       authName: "订单促销",
-                      path: '/marketing/marketing/promotion',
+                      path: null,
                       children: []
                     }
                   ]
@@ -148,13 +148,13 @@ class MenuController extends Controller {
                     {
                       id: 310,
                       authName: "优惠券",
-                      path: '/marketing/coupon/list',
+                      path: null,
                       children: []
                     },
                     {
                       id: 311,
                       authName: "优惠券发放",
-                      path: '/marketing/coupon/give',
+                      path: null,
                       children: []
                     }
                   ]
@@ -167,13 +167,13 @@ class MenuController extends Controller {
                     {
                       id: 312,
                       authName: "购物卡",
-                      path: '/marketing/card/list',
+                      path: null,
                       children: []
                     },
                     {
                       id: 313,
                       authName: "购物卡使用",
-                      path: '/marketing/card/use',
+                      path: null,
                       children: []
                     }
                   ]
@@ -188,7 +188,7 @@ class MenuController extends Controller {
                 {
                   id: 211,
                   authName: "会员首页",
-                  path: '/member/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -199,13 +199,13 @@ class MenuController extends Controller {
                     {
                       id: 314,
                       authName: "会员账号",
-                      path: '/member/user/client',
+                      path: null,
                       children: []
                     },
                     {
                       id: 315,
                       authName: "账号等级",
-                      path: '/member/user/level',
+                      path: null,
                       children: []
                     }
                   ]
@@ -218,7 +218,7 @@ class MenuController extends Controller {
                     {
                       id: 316,
                       authName: "提现列表",
-                      path: '/member/withdraw/list',
+                      path: null,
                       children: []
                     }
                   ]
@@ -277,7 +277,7 @@ class MenuController extends Controller {
                 {
                   id: 216,
                   authName: "数据首页",
-                  path: '/stats/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -288,25 +288,25 @@ class MenuController extends Controller {
                     {
                       id: 321,
                       authName: "店铺统计",
-                      path: '/stats/data/shop',
+                      path: null,
                       children: []
                     },
                     {
                       id: 322,
                       authName: "商品统计",
-                      path: '/stats/data/goods',
+                      path: null,
                       children: []
                     },
                     {
                       id: 323,
                       authName: "订单统计",
-                      path: '/stats/data/order',
+                      path: null,
                       children: []
                     },
                     {
                       id: 324,
                       authName: "会员统计",
-                      path: '/stats/data/client',
+                      path: null,
                       children: []
                     }
                   ]
@@ -321,7 +321,7 @@ class MenuController extends Controller {
                 {
                   id: 218,
                   authName: "系统首页",
-                  path: '/system/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -332,13 +332,13 @@ class MenuController extends Controller {
                     {
                       id: 325,
                       authName: "我的消息",
-                      path: '/system/message/user',
+                      path: null,
                       children: []
                     },
                     {
                       id: 326,
                       authName: "发布消息",
-                      path: '/system/message/send',
+                      path: null,
                       children: []
                     }
                   ]
@@ -351,13 +351,13 @@ class MenuController extends Controller {
                     {
                       id: 327,
                       authName: "广告位置",
-                      path: '/system/ads/position',
+                      path: null,
                       children: []
                     },
                     {
                       id: 328,
                       authName: "广告列表",
-                      path: '/system/ads/ads',
+                      path: null,
                       children: []
                     }
                   ]
@@ -370,13 +370,13 @@ class MenuController extends Controller {
                     {
                       id: 329,
                       authName: "新增文章",
-                      path: '/system/article/create',
+                      path: null,
                       children: []
                     },
                     {
                       id: 330,
                       authName: "文章管理",
-                      path: '/system/article/admin',
+                      path: null,
                       children: []
                     }
                   ]
@@ -410,7 +410,7 @@ class MenuController extends Controller {
                 {
                   id: 223,
                   authName: "设置首页",
-                  path: '/setting/index',
+                  path: null,
                   children: []
                 },
                 {
@@ -421,13 +421,13 @@ class MenuController extends Controller {
                     {
                       id: 333,
                       authName: "用户组",
-                      path: '/setting/auth/group',
+                      path: null,
                       children: []
                     },
                     {
                       id: 334,
                       authName: "权限规则",
-                      path: '/setting/auth/rule',
+                      path: null,
                       children: []
                     }
                   ]
@@ -440,13 +440,13 @@ class MenuController extends Controller {
                     {
                       id: 335,
                       authName: "支付配置",
-                      path: '/setting/payallocation',
+                      path: null,
                       children: []
                     },
                     {
                       id: 336,
                       authName: "支付日志",
-                      path: '/setting/paylog',
+                      path: null,
                       children: []
                     }
                   ]
@@ -459,13 +459,13 @@ class MenuController extends Controller {
                     {
                       id: 337,
                       authName: "APP管理",
-                      path: '/setting/Appmanage',
+                      path: null,
                       children: []
                     },
                     {
                       id: 338,
                       authName: "商业授权",
-                      path: '/setting/bussinessauthorize',
+                      path: null,
                       children: []
                     }
                   ]

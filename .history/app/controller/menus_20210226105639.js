@@ -427,7 +427,7 @@ class MenuController extends Controller {
                     {
                       id: 334,
                       authName: "权限规则",
-                      path: '/setting/auth/rule',
+                      path: null,
                       children: []
                     }
                   ]
@@ -440,13 +440,13 @@ class MenuController extends Controller {
                     {
                       id: 335,
                       authName: "支付配置",
-                      path: '/setting/payallocation',
+                      path: null,
                       children: []
                     },
                     {
                       id: 336,
                       authName: "支付日志",
-                      path: '/setting/paylog',
+                      path: null,
                       children: []
                     }
                   ]
@@ -459,13 +459,13 @@ class MenuController extends Controller {
                     {
                       id: 337,
                       authName: "APP管理",
-                      path: '/setting/Appmanage',
+                      path: null,
                       children: []
                     },
                     {
                       id: 338,
                       authName: "商业授权",
-                      path: '/setting/bussinessauthorize',
+                      path: null,
                       children: []
                     }
                   ]
