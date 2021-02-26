@@ -4,8 +4,13 @@ const Controller = require('egg').Controller;
 
 class UserController extends Controller {
     async login() { //登录
-        let {ctx} = this
-        let {username,password} = ctx.request.body //获取前端数据
+        let {
+            ctx
+        } = this
+        let {
+            username,
+            password
+        } = ctx.request.body //获取前端数据
         let user = await ctx.model.User.findOne({ //查询一个用户信息的数据(所有增删查改必须要用await)
             username,
             password
@@ -74,14 +79,14 @@ class UserController extends Controller {
             username
         } = this.ctx.request.body
         let res = await this.ctx.model.User.findByIdAndUpdate({
-            _id: id, username
+            _id: id,username
         })
         if (res) {
             this.ctx.body = {
                 code: 200,
-                msg: '修改成功'
+                msg: '修改成功' 
             }
-        } else {
+        }else{
             this.ctx.body = {
                 code: 500,
                 msg: '修改失败'
