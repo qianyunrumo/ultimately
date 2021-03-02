@@ -28,7 +28,7 @@ module.exports=app=>{
         required:true
     },
     pic:{//商品图片
-        type:Array
+        type:String
     }
   })
   return mongoose.model('Goods',GoodsSchema)

@@ -16,10 +16,8 @@ module.exports = app => {
   router.get('/goods',controller.goods.goods)
   //删除商品
   router.delete('/goods/delete',controller.goods.delete)
-  //编辑商品
-  router.post('/goods/edit',controller.goods.edit)
   //商品分类
-  router.get('/goods/classify',controller.classify.classify)
+  router.get('/goods/classify',controller.goods.classify)
   //商品评价
-  // router.post('goods/evaluate',controller.evaluate.evaluate)
+  router.post('goods/evaluate',controller.goods.evaluate)
 };

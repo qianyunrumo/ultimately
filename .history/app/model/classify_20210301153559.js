@@ -1,9 +1,9 @@
-//商品的所有信息
+//商品分类的所有信息
 module.exports=app=>{
   let mongoose=app.mongoose
   let Schema=mongoose.Schema
   const GoodsSchema = new Schema({
-    name:{//商品名称
+    authName:{//分类名称
         type:String,
         required:true//是否必填
     },
@@ -31,5 +31,5 @@ module.exports=app=>{
         type:Array
     }
   })
-  return mongoose.model('Goods',GoodsSchema)
+  return mongoose.model('Classify',ClassifySchema)
 }

@@ -20,6 +20,6 @@ module.exports = app => {
   router.post('/goods/edit',controller.goods.edit)
   //商品分类
   router.get('/goods/classify',controller.classify.classify)
-  //商品评价
-  // router.post('goods/evaluate',controller.evaluate.evaluate)
+  //商品评价数据
+  // router.get('goods/evaluate',controller.goods.evaluate)
 };

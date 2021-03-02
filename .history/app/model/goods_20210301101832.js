@@ -12,23 +12,19 @@ module.exports=app=>{
         required:true
     },
     metering:{//商品个数(库存)
-        type:Number,
-        required:true
+        type:Number
     },
     status:{//上架状态,true为"出售中",false为"已下架"
-        type:Boolean,
-        required:true
+        type:Boolean
     },
     price:{//价格
-        type:Number,
-        required:true
+        type:Number
     },
     postage:{//包邮
-        type:Boolean,
-        required:true
+        type:Boolean
     },
     pic:{//商品图片
-        type:Array
+        type:String
     }
   })
   return mongoose.model('Goods',GoodsSchema)

@@ -62,7 +62,9 @@ class UserController extends Controller {
     // }
     async user() { //修改
         let {id,username} = this.ctx.request.body
-        let res = await this.ctx.model.User.findByIdAndUpdate(id, {username})
+        let res = await this.ctx.model.User.findByIdAndUpdate({
+            _id: id, username
+        })
         if (res) {
             this.ctx.body = {
                 code: 200,

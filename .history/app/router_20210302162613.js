@@ -21,5 +21,5 @@ module.exports = app => {
   //商品分类
   router.get('/goods/classify',controller.classify.classify)
   //商品评价
-  // router.post('goods/evaluate',controller.evaluate.evaluate)
+  router.post('goods/evaluate',controller.evaluate.evaluate)
 };
