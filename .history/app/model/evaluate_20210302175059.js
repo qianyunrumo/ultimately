@@ -1,3 +1,5 @@
+const { app } = require("egg-mock/bootstrap");
+
 //商品评价的所有信息
 module.exports=app=>{
   let mongoose=app.mongoose
