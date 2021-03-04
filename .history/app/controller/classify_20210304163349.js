@@ -26,18 +26,6 @@ class ClassifyController extends Controller {
       }
     }
   };
-  async deleteClassify() {//删除分类
-    let {id} = this.ctx.request.body
-    let res = await this.ctx.model.Classify.findByIdAndRemove({
-      _id : id
-    })
-    if(res){
-      this.ctx.body = {
-        msg: '删除成功',
-        status: 200
-      }
-    }
-  };
 }
 
 module.exports = ClassifyController;

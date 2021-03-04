@@ -7,6 +7,9 @@ module.exports=app=>{
       type:String,
       required:true//是否必填
     },
+    id:{//分类id
+      type:Number
+    },
     superior:{//上级分类
       type:String
     },

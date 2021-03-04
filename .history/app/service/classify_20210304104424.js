@@ -1789,41 +1789,25 @@ class ClassifyService extends Service {
             ]
           },
           {
-            id: 960,
+            id: 910,
             authName: '游泳用品',
-            children:[
-              {
-                id: 961,
-                authName: '其他',
-                children:[]
-              },
-              {
-                id: 962,
-                authName: '泳镜',
-                children:[]
-              },
-              {
-                id: 963,
-                authName: '泳帽',
-                children:[]
-              },
-              {
-                id: 964,
-                authName: '游泳包防水包',
-                children:[]
-              },
-              {
-                id: 965,
-                authName: '男士泳衣',
-                children:[]
-              },
-              {
-                id: 966,
-                authName: '女士泳衣',
-                children:[]
-              },
-            ]
-          }
+            children:[]
+          },
+          {
+            id: 910,
+            authName: '运动服饰',
+            children:[]
+          },
+          {
+            id: 910,
+            authName: '健身训练',
+            children:[]
+          },
+          {
+            id: 910,
+            authName: '骑行运动',
+            children:[]
+          },
         ]
       }
     ]

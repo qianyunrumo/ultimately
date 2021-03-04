@@ -24,6 +24,4 @@ module.exports = app => {
   router.post('/goods/addClassify',controller.classify.addClassify)
   //商品评价
   router.post('/goods/evaluate',controller.evaluate.evaluate)
-  //删除分类
-  router.delete('/goods/deleteClassify',controller.classify.deleteClassify)
 };

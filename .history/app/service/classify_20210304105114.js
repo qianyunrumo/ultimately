@@ -1823,7 +1823,22 @@ class ClassifyService extends Service {
                 children:[]
               },
             ]
-          }
+          },
+          {
+            id: 910,
+            authName: '运动服饰',
+            children:[]
+          },
+          {
+            id: 910,
+            authName: '健身训练',
+            children:[]
+          },
+          {
+            id: 910,
+            authName: '骑行运动',
+            children:[]
+          },
         ]
       }
     ]

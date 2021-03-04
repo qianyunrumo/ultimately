@@ -1712,118 +1712,35 @@ class ClassifyService extends Service {
             ]
           },
           {
-            id: 940,
+            id: 910,
             authName: '垂钓用品',
-            children:[
-              {
-                id: 941,
-                authName: '钓鱼竿线',
-                children:[]
-              },
-              {
-                id: 942,
-                authName: '钓箱鱼包',
-                children:[]
-              },
-              {
-                id: 943,
-                authName: '浮漂鱼饵',
-                children:[]
-              },
-              {
-                id: 944,
-                authName: '钓鱼竿',
-                children:[]
-              },
-              {
-                id: 945,
-                authName: '钓鱼配件',
-                children:[]
-              },
-            ]
+            children:[]
           },
           {
-            id: 950,
+            id: 910,
             authName: '运动鞋包',
-            children:[
-              {
-                id: 951,
-                authName: '帆布鞋',
-                children:[]
-              },
-              {
-                id: 952,
-                authName: '网球鞋',
-                children:[]
-              },
-              {
-                id: 953,
-                authName: '跑鞋',
-                children:[]
-              },
-              {
-                id: 954,
-                authName: '训练鞋',
-                children:[]
-              },
-              {
-                id: 955,
-                authName: '休闲鞋',
-                children:[]
-              },
-              {
-                id: 956,
-                authName: '篮球鞋',
-                children:[]
-              },
-              {
-                id: 957,
-                authName: '足球鞋',
-                children:[]
-              },
-              {
-                id: 958,
-                authName: '运动包',
-                children:[]
-              },
-            ]
+            children:[]
           },
           {
-            id: 960,
+            id: 910,
             authName: '游泳用品',
-            children:[
-              {
-                id: 961,
-                authName: '其他',
-                children:[]
-              },
-              {
-                id: 962,
-                authName: '泳镜',
-                children:[]
-              },
-              {
-                id: 963,
-                authName: '泳帽',
-                children:[]
-              },
-              {
-                id: 964,
-                authName: '游泳包防水包',
-                children:[]
-              },
-              {
-                id: 965,
-                authName: '男士泳衣',
-                children:[]
-              },
-              {
-                id: 966,
-                authName: '女士泳衣',
-                children:[]
-              },
-            ]
-          }
+            children:[]
+          },
+          {
+            id: 910,
+            authName: '运动服饰',
+            children:[]
+          },
+          {
+            id: 910,
+            authName: '健身训练',
+            children:[]
+          },
+          {
+            id: 910,
+            authName: '骑行运动',
+            children:[]
+          },
         ]
       }
     ]

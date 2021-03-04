@@ -7,6 +7,10 @@ module.exports=app=>{
       type:String,
       required:true//是否必填
     },
+    id:{//分类id
+      type:Number,
+      required:true
+    },
     superior:{//上级分类
       type:String
     },
@@ -17,9 +21,6 @@ module.exports=app=>{
       type:String
     },
     first_otherName:{//别名首拼
-      type:String
-    },
-    keyword:{//关键词
       type:String
     }
   })

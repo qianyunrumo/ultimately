@@ -17,25 +17,11 @@ class ClassifyController extends Controller {
   async addClassify() {//新增分类
     let {ctx,app} = this
     let {authName} = ctx.request.body
-    if(authName && authName != ''){
-      let classifys = new app.model.Classify(ctx.request.body)//添加
-      await classifys.save()
-      ctx.body = {
-        msg: '添加分类成功',
-        status: 200
-      }
-    }
-  };
-  async deleteClassify() {//删除分类
-    let {id} = this.ctx.request.body
-    let res = await this.ctx.model.Classify.findByIdAndRemove({
-      _id : id
-    })
-    if(res){
-      this.ctx.body = {
-        msg: '删除成功',
-        status: 200
-      }
+    let classifys = new app.model.Classify(ctx.request.body)//添加
+    await classifys.save()
+    ctx.body = {
+      msg: '添加分类成功',
+      status: 200
     }
   };
 }
