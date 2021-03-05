@@ -1,0 +1,53 @@
+'use strict';
+
+const Controller = require('egg').Controller;
+
+class ClassifyController extends Controller {
+  async classify() {//商品分类列表
+    let list = await this.service.classify.GetClassify() 
+    this.ctx.body = {
+      code: 200,
+      data: list,
+      meta: {
+        msg: '获取商品分类成功',
+        status: 200 
+      }
+    }
+  };
+  async addClassify() {//新增商品分类
+    let {ctx,app} = this
+    let {main_class, sub_class, pic} = ctx.request.body
+    let data = {
+      main_class: main_class,
+      secondary_class:[
+        {
+          sub_class: sub_class,
+          pic: pic
+        },
+      ]
+    }
+    let flag = await app.model.Classify.find({main_class: main_class})//查找是否拥有当前一级分类
+    if(flag){
+      let logo = await app.model.Classify.findOneAndUpdate(main_class,{$addToSet:{
+        //找到拥有的一级分类并向分类中添加次级分类
+        //$addToSet向数组中添加一个元素,如果存在就不添加
+        sub_class: sub_class,
+        pic: pic
+      }})
+    }
+  };
+  async deleteClassify() {//删除分类
+    let {id} = this.ctx.request.body
+    let res = await this.ctx.model.Classify.findByIdAndRemove({
+      _id : id
+    })
+    if(res){
+      this.ctx.body = {
+        msg: '删除成功',
+        status: 200
+      }
+    }
+  };
+}
+
+module.exports = ClassifyController;

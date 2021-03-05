@@ -26,6 +26,4 @@ module.exports = app => {
   router.post('/goods/evaluate',controller.evaluate.evaluate)
   //删除二级分类
   router.delete('/goods/deleteClassify',controller.classify.deleteClassify)
-  //删除一级分类
-  router.delete('/goods/deletemainClassify',controller.classify.deletemainClassify)
 };

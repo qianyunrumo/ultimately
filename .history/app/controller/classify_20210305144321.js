@@ -20,6 +20,7 @@ class ClassifyController extends Controller {
     let {main_class, sub_class, pic} = ctx.request.body
     //生成不重复ID
     let random_id = (Math.random()*10000000).toString(16).substr(0,4)+(new Date()).getTime()+Math.random().toString().substr(2,5)
+    console.log(random_id)
     let data = {//分类数据，如果没有此大分类，则添加该数据
       main_class: main_class,
       secondary_class:[
@@ -66,36 +67,15 @@ class ClassifyController extends Controller {
       }
     }
   };
-  async deleteClassify() {//删除二级分类
-    let {ctx,app} = this
-    let {c_id} = ctx.request.body
-    console.log(c_id)
-    let res = await app.model.Classify.findOneAndRemove({c_id})
+  async deleteClassify() {//删除分类
+    let {id} = this.ctx.request.body
+    let res = await this.ctx.model.Classify.findByIdAndRemove({
+     c_id = id
+    })
     if(res){
-      ctx.body = {
+      this.ctx.body = {
         msg: '删除成功',
-        code: 200
-      }
-    }else{
-      ctx.body = {
-        msg: '该物品不存在',
-        code: 500
-      }
-    }
-  };
-  async deletemainClassify() {//删除一级分类
-    let {ctx,app} = this
-    let {_id} = ctx.request.body
-    let res = await app.model.Classify.findOneAndRemove({_id})
-    if(res){
-      ctx.body = {
-        msg: '删除成功',
-        code: 200
-      }
-    }else{
-      ctx.body = {
-        msg: '该物品不存在',
-        code: 500
+        status: 200
       }
     }
   };

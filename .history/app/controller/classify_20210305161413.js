@@ -70,7 +70,8 @@ class ClassifyController extends Controller {
     let {ctx,app} = this
     let {c_id} = ctx.request.body
     console.log(c_id)
-    let res = await app.model.Classify.findOneAndRemove({c_id})
+    let res = await app.model.Classify.find({c_id})
+    console.log(res)
     if(res){
       ctx.body = {
         msg: '删除成功',

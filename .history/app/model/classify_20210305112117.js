@@ -17,7 +17,7 @@ module.exports=app=>{
     }],
     sub_class:{//二级分类名称
       type:String
-    },
+    }
   })
   return mongoose.model('Classify',ClassifySchema)
 }

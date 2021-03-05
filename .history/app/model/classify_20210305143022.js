@@ -18,6 +18,9 @@ module.exports=app=>{
     sub_class:{//二级分类名称
       type:String
     },
+    random_id:{//二级分类id
+      type:ObjectId
+    }
   })
   return mongoose.model('Classify',ClassifySchema)
 }

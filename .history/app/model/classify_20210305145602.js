@@ -2,6 +2,7 @@
 module.exports=app=>{
   let mongoose=app.mongoose
   let Schema=mongoose.Schema
+  const mongoose = require('mongoose')
   const ClassifySchema = new Schema({
     superior:{//上级分类
       type:String
@@ -18,6 +19,9 @@ module.exports=app=>{
     sub_class:{//二级分类名称
       type:String
     },
+    _id:{
+      type:ObjectId
+    }
   })
   return mongoose.model('Classify',ClassifySchema)
 }

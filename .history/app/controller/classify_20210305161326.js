@@ -69,8 +69,7 @@ class ClassifyController extends Controller {
   async deleteClassify() {//删除二级分类
     let {ctx,app} = this
     let {c_id} = ctx.request.body
-    console.log(c_id)
-    let res = await app.model.Classify.findOneAndRemove({c_id})
+    let res = await app.model.Classify.find({c_id})
     if(res){
       ctx.body = {
         msg: '删除成功',

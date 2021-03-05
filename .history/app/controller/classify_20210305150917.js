@@ -24,7 +24,7 @@ class ClassifyController extends Controller {
       main_class: main_class,
       secondary_class:[
         {
-          c_id: random_id,
+          _id: random_id,
           sub_class: sub_class,
           pic: pic
         },
@@ -35,7 +35,7 @@ class ClassifyController extends Controller {
       let res = await app.model.Classify.findOneAndUpdate({main_class: main_class},{$addToSet:{secondary_class:{
         //找到拥有的一级分类并向分类中添加次级分类
         //$addToSet向数组中添加一个元素,如果存在就不添加
-        c_id: random_id,
+        _id: random_id,
         sub_class: sub_class,
         pic: pic
       }}})
@@ -66,27 +66,12 @@ class ClassifyController extends Controller {
       }
     }
   };
-  async deleteClassify() {//删除二级分类
-    let {ctx,app} = this
-    let {c_id} = ctx.request.body
-    console.log(c_id)
-    let res = await app.model.Classify.findOneAndRemove({c_id})
-    if(res){
-      ctx.body = {
-        msg: '删除成功',
-        code: 200
-      }
-    }else{
-      ctx.body = {
-        msg: '该物品不存在',
-        code: 500
-      }
-    }
-  };
-  async deletemainClassify() {//删除一级分类
+  async deleteClassify() {//删除分类
     let {ctx,app} = this
     let {_id} = ctx.request.body
-    let res = await app.model.Classify.findOneAndRemove({_id})
+    let res = await app.model.Classify.remove({
+      _id
+    })
     if(res){
       ctx.body = {
         msg: '删除成功',

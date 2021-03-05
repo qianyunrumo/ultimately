@@ -12,12 +12,15 @@ module.exports=app=>{
     main_class:{//一级分类名称
       type:String
     },
-    secondary_class:[{//二级分类
+    secondary_class:{//二级分类
       type:Object
-    }],
+    },
     sub_class:{//二级分类名称
       type:String
     },
+    _id:{//随机生成二级分类id
+      type:String
+    }
   })
   return mongoose.model('Classify',ClassifySchema)
 }
