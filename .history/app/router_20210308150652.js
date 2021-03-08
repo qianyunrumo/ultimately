@@ -34,6 +34,4 @@ module.exports = app => {
   router.get('/goods/discount',controller.discount.discount)
   //删除商品折扣
   router.delete('/goods/delDiscount',controller.discount.delDiscount)
-  //编辑商品折扣
-  router.post('/goods/editDiscount',controller.discount.editDiscount)
 };

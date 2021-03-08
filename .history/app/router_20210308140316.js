@@ -29,11 +29,5 @@ module.exports = app => {
   //删除一级分类
   router.delete('/goods/deletemainClassify',controller.classify.deletemainClassify)
   //新增商品折扣
-  router.post('/goods/addDiscount',controller.discount.addDiscount)
-  //查询商品折扣
-  router.get('/goods/discount',controller.discount.discount)
-  //删除商品折扣
-  router.delete('/goods/delDiscount',controller.discount.delDiscount)
-  //编辑商品折扣
-  router.post('/goods/editDiscount',controller.discount.editDiscount)
+  router.post('/goods/discount',controller.discount.addDiscount)
 };
