@@ -9,5 +9,6 @@ module.exports = app => {
   router.post('/user/register',controller.user.register)
   router.post('/user',controller.user.user)
   //列表数据
-  router.get('/menus',controller.menus.menus)
+  // router.get('/menus',controller.menus.menus)
+  router.get('/AMS/accredit',controller.AMS.accredit)
 };
